@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html data-theme="dark" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#0a0f1c">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <title>Yadvendra Kumar | Full-Stack Developer</title>
+    <meta content="Portfolio of Yadvendra Kumar, Full-Stack Developer and MCA student. Django, FastAPI, Next.js, Node.js." name="description">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="bar"></div>
+    <div id="cur"></div>
+    <canvas aria-hidden="true" id="bg"></canvas>
+    <header class="nav">
+      <a class="logo" href="#home">YK<i></i></a>
+      <nav id="links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#work">Experience</a>
+        <a href="#ask">Ask Me</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nr">
+        <button aria-label="Open command menu" class="ghost" id="kbtn">Ctrl K</button>
+        <button aria-label="Toggle theme" class="ghost" id="theme">◐</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero wrap" id="home">
+        <div class="ht">
+          <p class="chip"><span class="dot"></span>Open to Web Developer and Full-Stack roles</p>
+          <h1>Yadvendra<br>Kumar</h1>
+          <p class="role"><span id="type"></span><b class="caret"></b></p>
+          <p class="lead">I build registration workflows, dashboards and APIs for real institutions, from the Django backend to the last pixel of the interface.</p>
+          <div class="cta">
+            <a class="btn pri" download href="assets/Yadvendra_Kumar_Resume.pdf">Download resume</a>
+            <a class="btn" href="#projects">See projects</a>
+            <a class="btn" href="https://github.com/Yadvendrakumar" rel="noopener" target="_blank">GitHub</a>
+            <a class="btn" href="#contact">Hire me</a>
+          </div>
+        </div>
+        <div class="hp">
+          <div class="orbit">
+            <i class="ring r1"></i>
+            <i class="ring r2"></i>
+            <div class="photo" data-tilt>
+              <img alt="Yadvendra Kumar" height="210" src="assets/photo.jpg" width="210">
+            </div>
+            <span class="fl f1">Django</span>
+            <span class="fl f2">Node.js</span>
+            <span class="fl f3">HTML</span>
+            <span class="fl f4">CSS</span>
+            <span class="fl f5">JavaScript</span>
+          </div>
+        </div>
+      </section>
+
+      <div aria-hidden="true" class="mq">
+        <div id="mqt"></div>
+      </div>
+      <section class="wrap sec" id="about">
+        <h2>About</h2>
+        <div class="grid2">
+          <div>
+            <p>I am an MCA student at Bharati Vidyapeeth IMED, Pune, with a BCA from Shri Rawatpura Sarkar University, Raipur. I work across Python, JavaScript and TypeScript, and I like products where a clear interface sits on top of solid backend logic.</p>
+            <p>Right now I am building the frontend of the International Conference Portal, a live website for my college, using Git, GitHub and a modular structure so the team can keep shipping.</p>
+          </div>
+          <div class="stats">
+            <div data-tilt>
+              <b data-n="8">0</b>
+              <span>Languages</span>
+            </div>
+            <div data-tilt>
+              <b data-n="5">0</b>
+              <span>Frameworks</span>
+            </div>
+            <div data-tilt>
+              <b data-n="4">0</b>
+              <span>Databases</span>
+            </div>
+            <div data-tilt>
+              <b data-d="2" data-n="7.91">0</b>
+              <span>BCA CGPA</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrap sec" id="skills">
+        <h2>Skills</h2>
+        <div class="cards">
+          <article data-tilt>
+            <h3>Languages</h3>
+            <p class="tags"><i>Python</i><i>JavaScript</i><i>TypeScript</i><i>PHP</i><i>Java</i><i>SQL</i><i>HTML5</i><i>CSS3</i></p>
+          </article>
+          <article data-tilt>
+            <h3>Frameworks</h3>
+            <p class="tags"><i>Django</i><i>FastAPI</i><i>Next.js</i><i>Node.js</i><i>Express</i></p>
+          </article>
+          <article data-tilt>
+            <h3>Databases</h3>
+            <p class="tags"><i>Firebase Auth</i><i>Firestore</i><i>MongoDB</i><i>MySQL</i><i>SQLite</i></p>
+          </article>
+          <article data-tilt>
+            <h3>Tools</h3>
+            <p class="tags"><i>Git</i><i>GitHub</i><i>VS Code</i><i>PyCharm</i></p>
+          </article>
+        </div>
+      </section>
+
+      <section class="wrap sec" id="projects">
+        <h2>Projects</h2>
+        <div class="filters">
+          <button class="on" data-f="all">All</button>
+          <button data-f="live">Live</button>
+          <button data-f="django">Django</button>
+          <button data-f="web">HTML &amp; JS</button>
+        </div>
+        <div class="proj">
+          <article class="pc" data-t="live">
+            <div class="mock" data-tilt>
+              <div class="chrome">
+                <i></i>
+                <i></i>
+                <i></i>
+                <span>conference.imedpune.org</span>
+              </div>
+              <img alt="International Conference Portal screenshot" loading="lazy" src="assets/conference.jpg">
+            </div>
+            <div class="pb">
+              <span class="badge">Live</span>
+              <h3>International Conference Portal</h3>
+              <dl>
+                <dt>Goal</dt>
+                <dd>A dependable public website for the college&rsquo;s international conference.</dd>
+                <dt>Built</dt>
+                <dd>Complete frontend: registration, paper submission, speakers, countdown and add-to-calendar.</dd>
+                <dt>Role</dt>
+                <dd>Frontend developer, working with the college team through Git and GitHub.</dd>
+              </dl>
+              <p class="tags"><i>HTML</i><i>CSS</i><i>JavaScript</i><i>Git</i></p>
+              <a class="btn pri" href="https://conference.imedpune.org/" rel="noopener" target="_blank">Open live site</a>
+            </div>
+          </article>
+          <article class="pc" data-t="django">
+            <div class="mock" data-tilt>
+              <div class="chrome">
+                <i></i>
+                <i></i>
+                <i></i>
+                <span>SPDS &middot; Django</span>
+              </div>
+              <img alt="SPDS: Student Profile Database System screenshot" loading="lazy" src="assets/spds.jpg">
+            </div>
+            <div class="pb">
+              <span class="badge">Django</span>
+              <h3>SPDS: Student Profile Database System</h3>
+              <dl>
+                <dt>Goal</dt>
+                <dd>One ERP and LMS portal for admins, teachers and students.</dd>
+                <dt>Built</dt>
+                <dd>Role dashboards, QR-code attendance, work uploads, public profiles, analytics, leaderboards, quiz exports and AJAX course-subject cascading.</dd>
+                <dt>Role</dt>
+                <dd>Full-stack developer.</dd>
+              </dl>
+              <p class="tags"><i>Django</i><i>Python</i><i>HTML</i><i>CSS</i><i>JavaScript</i></p>
+              <a class="btn" href="https://github.com/Yadvendrakumar/Student-Profile-Database-System" rel="noopener" target="_blank">View on GitHub</a>
+            </div>
+          </article>
+          <article class="pc" data-t="django">
+            <div class="mock" data-tilt>
+              <div class="chrome">
+                <i></i>
+                <i></i>
+                <i></i>
+                <span>SmartFit Hub</span>
+              </div>
+              <img alt="SmartFit Hub screenshot" loading="lazy" src="assets/smartfit.jpg">
+            </div>
+            <div class="pb">
+              <span class="badge">Django REST</span>
+              <h3>SmartFit Hub</h3>
+              <dl>
+                <dt>Goal</dt>
+                <dd>Fitness and diet management in a single app.</dd>
+                <dt>Built</dt>
+                <dd>JWT auth with role-based access, an Indian food database for TDEE diet plans, workout tracking, SVG calorie ring, water tracker and Chart.js analytics.</dd>
+                <dt>Role</dt>
+                <dd>Full-stack developer.</dd>
+              </dl>
+              <p class="tags"><i>Django REST</i><i>Chart.js</i><i>Vanilla JS</i><i>HTML</i><i>CSS</i><i>JavaScript</i></p>
+              <a class="btn" href="https://github.com/Yadvendrakumar/Smart-Fit-Hub" rel="noopener" target="_blank">View on GitHub</a>
+            </div>
+          </article>
+          <article class="pc" data-t="web" id="webtech">
+            <div class="mock" data-tilt>
+              <div class="chrome"><i></i><i></i><i></i><span>Web-Tech-Assignments</span></div>
+              <div class="chart">
+                <p class="ct">HTML files per assignment</p>
+                <div class="bars">
+                  <div class="bar" style="--h: 31%; --i: 0"><em>16</em></div>
+                  <div class="bar" style="--h: 14%; --i: 1"><em>7</em></div>
+                  <div class="bar" style="--h: 98%; --i: 2"><em>50</em></div>
+                  <div class="bar hi" style="--h: 100%; --i: 3"><em>51</em></div>
+                  <div class="bar" style="--h: 45%; --i: 4"><em>23</em></div>
+                </div>
+                <div class="axis"><span>A1</span><span>A2</span><span>A3</span><span>A4</span><span>A5</span></div>
+                <p class="cf"><span>Mini projects</span><b>3 sites · 9 pages</b></p>
+              </div>
+            </div>
+            <div class="pb">
+              <span class="badge">HTML + JS</span>
+              <h3>Web Technology Assignments &amp; Mini Projects</h3>
+              <dl>
+                <dt>Goal</dt>
+                <dd>Practise front-end fundamentals through HTML practicals and three small multi-page website mini projects.</dd>
+                <dt>Built</dt>
+                <dd>156 HTML files across five assignments: semantic HTML, tables, forms with validation, content pages, and JavaScript pages such as an online exam, registration forms, a marksheet and a calculator.</dd>
+                <dt>Sites</dt>
+                <dd>ABC College website (4 pages), Online Shopping Store (1 page) and City Care Hospital website (4 pages).</dd>
+              </dl>
+              <div class="kpis">
+                <div><b>156</b><span>HTML files</span></div>
+                <div><b>5</b><span>Assignments</span></div>
+                <div><b>3</b><span>Mini projects</span></div>
+              </div>
+              <p class="tags"><i>HTML</i><i>JavaScript</i><i>Forms</i><i>Tables</i></p>
+              <a class="btn" href="https://github.com/Yadvendrakumar/Web-Tech-Assignments" target="_blank" rel="noopener">View on GitHub</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="wrap sec" id="work">
+        <h2>Experience and education</h2>
+        <div class="split">
+          <ol class="tl">
+            <li><time>In development</time><h3>International Conference Portal, college live project</h3><p>Built the frontend of the conference website and collaborate through Git and GitHub with modular architecture and clean code practices.</p></li>
+            <li><time>Pursuing</time><h3>MCA, Bharati Vidyapeeth IMED, Pune</h3><p>Coursework: Full-Stack Web Development.</p></li>
+            <li><time>Completed</time><h3>BCA, Shri Rawatpura Sarkar University, Raipur</h3><p>CGPA 7.91.</p></li>
+            <li><time>Certification</time><h3>Web Development</h3><p>HTML, CSS, JavaScript, Django and Node.js.</p></li>
+          </ol>
+          <div class="stage" aria-hidden="true">
+            <i class="ring"></i>
+            <div class="cube">
+              <span>Python</span>
+              <span>Django</span>
+              <span>JavaScript</span>
+              <span>Node.js</span>
+              <span>SQL</span>
+              <span>Git</span>
+            </div>
+            <p class="cap">Core stack</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrap sec" id="ask">
+        <h2>Ask me anything</h2>
+        <div class="askgrid">
+          <div class="chat" data-tilt>
+            <div aria-live="polite" id="log">
+              <p class="bot">Hi, I answer questions about Yadvendra&rsquo;s skills, projects and education. Try a question below.</p>
+            </div>
+            <div id="chips"></div>
+            <form id="cf">
+              <input aria-label="Your question" autocomplete="off" id="ci" placeholder="Ask about projects, skills, education&hellip;">
+              <button class="btn pri">Ask</button>
+            </form>
+          </div>
+          <div class="mock term" data-tilt>
+            <div class="chrome"><i></i><i></i><i></i><span>profile.js</span></div>
+            <pre class="code" id="code" aria-label="Profile summary"></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrap sec" id="contact">
+        <h2>Contact</h2>
+        <div class="grid2">
+          <div>
+            <p>Have a role or project in mind? Send a message and it lands straight in my inbox.</p>
+            <ul class="facts">
+              <li><span>Based in</span><b>Raipur, Chhattisgarh, India</b></li>
+              <li><span>Studying</span><b>MCA, Bharati Vidyapeeth IMED, Pune</b></li>
+              <li><span>Works with</span><b>Django, Node.js, JavaScript</b></li>
+            </ul>
+            <div class="quick">
+              <a class="qk" href="mailto:yashsahu11005@gmail.com" data-tilt><span>Email</span><em>yashsahu11005@gmail.com</em><b>→</b></a>
+              <a class="qk" href="https://wa.me/918103745500" target="_blank" rel="noopener" data-tilt><span>WhatsApp</span><em>+91 81037 45500</em><b>→</b></a>
+              <a class="qk" href="https://github.com/Yadvendrakumar" target="_blank" rel="noopener" data-tilt><span>GitHub</span><em>Yadvendrakumar</em><b>→</b></a>
+              <a class="qk" href="assets/Yadvendra_Kumar_Resume.pdf" download data-tilt><span>Resume</span><em>Download PDF</em><b>↓</b></a>
+              <p class="avail"><span class="dot"></span>Open to Web Developer and Full-Stack roles</p>
+            </div>
+          </div>
+          <form class="form" id="mail">
+            <input name="name" placeholder="Your name" required>
+            <input name="email" placeholder="Your email" required type="email">
+            <textarea name="message" placeholder="Your message" required rows="5"></textarea>
+            <input autocomplete="off" name="_honey" style="display:none" tabindex="-1" type="text">
+            <button class="btn pri">Send message</button>
+            <p id="st" role="status"></p>
+          </form>
+        </div>
+      </section>
+
+
+    </main>
+
+    <div class="big wrap" aria-hidden="true">Let’s build something great together.</div>
+    <footer class="wrap">&copy; 2026 Yadvendra Kumar. Built by hand with HTML, CSS, JavaScript and three.js.</footer>
+    <div class="fab">
+      <button aria-label="Back to top" id="top"><svg fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4" viewBox="0 0 24 24" width="22"><path d="M12 19V5M5 12l7-7 7 7"></path></svg></button>
+      <a aria-label="Chat on WhatsApp" href="https://wa.me/918103745500?text=Hi%20Yadvendra%2C%20I%20saw%20your%20portfolio." id="wa" rel="noopener" target="_blank"><svg fill="#fff" height="28" viewBox="0 0 24 24" width="28"><path d="M12.04 2a9.9 9.9 0 0 0-8.4 15.1L2 22l5-1.6A9.9 9.9 0 1 0 12.04 2zm0 1.8a8.1 8.1 0 1 1-4.3 15l-.3-.2-2.9.9.9-2.8-.2-.3a8.1 8.1 0 0 1 6.8-12.6zM8.6 7.4c-.2 0-.5.1-.7.4-.3.3-.9.9-.9 2.1s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 2.2.9 2.6.7 3.1.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.5-.3l-1.6-.8c-.2-.1-.4-.1-.6.1l-.7.9c-.1.2-.3.2-.5.1-.3-.1-1.1-.4-2-1.3-.7-.7-1.2-1.5-1.4-1.8-.1-.2 0-.4.1-.5l.4-.5c.1-.1.2-.3.2-.4.1-.2 0-.3 0-.4l-.7-1.7c-.2-.5-.4-.4-.6-.4z"></path></svg></a>
+    </div>
+    <div hidden id="pal">
+      <div class="pbox">
+        <input aria-label="Command menu" id="pi" placeholder="Jump to&hellip;">
+        <ul id="pl"></ul>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
